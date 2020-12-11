@@ -11,6 +11,10 @@ public class Participant {
         this.attendanceStatus = new AttendanceStatus();
     }
 
+    public void attendStudy(int numberOfStudy) {
+        attendanceStatus.attendStudy(numberOfStudy);
+    }
+
     public double getAttendanceRate() {
         return attendanceStatus.calculateAttendanceRate();
     }
