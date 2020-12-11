@@ -23,6 +23,14 @@ public class AttendanceStatus {
         attendanceStatus.add(numberOfStudy - 1, true);
     }
 
+    public double calculateAttendanceRate() {
+        long countOfAttendance = attendanceStatus.stream()
+                .filter(as -> as)
+                .count();
+
+        return (double) countOfAttendance / TOTAL_NUMBER_OF_STUDY;
+    }
+
     public int size() {
         return attendanceStatus.size();
     }
