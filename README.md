@@ -14,10 +14,11 @@ Github API를 사용하려면, 자신의 로그인 인증 정보를 증명해야
 
 ```
 $ git clone https://github.com/CODEMCD/check-user-in-github-issue-comment.git
-$ cd check-user-in-github-issue-comment
-$ ./gradlew clean build
-$ java -jar build/libs/check-user-in-github-issue-comment-0.0.1-SNAPSHOT.jar
 ``` 
+
+IntelliJ로 프로젝트 열기
+
+빌드 및 실행
 
 ## 실행 결과
 
