@@ -15,8 +15,20 @@ public class AttendanceStatus {
         }
     }
 
+    public void attendStudy(int numberOfStudy) {
+        if (numberOfStudy < 1 || numberOfStudy > TOTAL_NUMBER_OF_STUDY) {
+            throw new IllegalArgumentException("유효하지 않는 스터디 주차입니다.");
+        }
+
+        attendanceStatus.add(numberOfStudy - 1, true);
+    }
+
     public int size() {
         return attendanceStatus.size();
+    }
+
+    public boolean get(int index) {
+        return attendanceStatus.get(index);
     }
 
     public List<Boolean> getAttendanceStatus() {
