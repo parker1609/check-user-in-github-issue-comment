@@ -2,6 +2,12 @@ plugins {
     id 'java'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'ConsoleApp'
+    }
+}
+
 group 'me.codemcd'
 version '1.0-SNAPSHOT'
 
